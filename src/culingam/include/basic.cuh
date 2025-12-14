@@ -4,7 +4,7 @@
 #include <cuda_runtime.h>
 #include <cmath>
 #include <iostream>
-#include <nvToolsExt.h>
+#include <nvtx3/nvToolsExt.h>
 
 // Error checking macro
 #define gpuErrchk(ans) { gpuAssert((ans), __FILE__, __LINE__); }
