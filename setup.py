@@ -33,7 +33,7 @@ cuda_ext = CUDAExtension(
         Path(this_dir) / "src" / "culingam" / "basic.cu",
         Path(this_dir) / "src" / "culingam" / "basic_wrapper.cpp"
     ],
-    libraries=['cudart', 'cudadevrt', 'nvToolsExt'],
+    libraries=['cudart', 'cudadevrt'],
     extra_compile_args={
         'cxx': ['-g', '-std=c++17'],
         'nvcc': append_nvcc_threads([
